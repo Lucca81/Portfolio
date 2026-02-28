@@ -12,6 +12,7 @@ export default function HeroSection() {
     const descRef = useRef<HTMLParagraphElement>(null);
     const scrollIndicatorRef = useRef<HTMLDivElement>(null);
     const lineRef = useRef<HTMLDivElement>(null);
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -101,7 +102,7 @@ export default function HeroSection() {
                     zIndex: 10,
                     width: '100%',
                     maxWidth: '700px',
-                    marginLeft: 'clamp(2rem, 8vw, 10rem)',
+                    marginLeft: isMobile ? '0' : 'clamp(2rem, 8vw, 10rem)',
                 }}
             >
                 {/* Label superior */}
