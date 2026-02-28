@@ -117,6 +117,7 @@ export default function HeroMesh({ mouse }: HeroMeshProps) {
     const groupRef = useRef<Group>(null);
     const torusRef = useRef<Mesh>(null);
     const innerRef = useRef<Mesh>(null);
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     // Target suave para follow do mouse
     const smoothMouse = useRef({ x: 0, y: 0 });
@@ -189,11 +190,11 @@ export default function HeroMesh({ mouse }: HeroMeshProps) {
                 </mesh>
 
                 {/* Partículas orbitais */}
-                <OrbitalParticles count={200} />
+                <OrbitalParticles count={isMobile ? 80 : 200} />
             </group>
 
             {/* Partículas flutuantes do ambiente */}
-            <FloatingDust count={150} />
+            <FloatingDust count={isMobile ? 50 : 150} />
         </Float>
     );
 }

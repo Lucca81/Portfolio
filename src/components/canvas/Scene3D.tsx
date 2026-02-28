@@ -10,6 +10,7 @@ import { useMousePosition } from '../../hooks/useMousePosition';
    ────────────────────────────────────────────── */
 function BackgroundStars() {
     const ref = useRef<Group>(null);
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     useFrame((_state, delta) => {
         if (ref.current) {
@@ -23,8 +24,8 @@ function BackgroundStars() {
             <Stars
                 radius={80}
                 depth={60}
-                count={2500}
-                factor={4}
+                count={isMobile ? 1000 : 2500}
+                factor={isMobile ? 3 : 4}
                 saturation={0}
                 fade
                 speed={0.8}
@@ -59,12 +60,14 @@ function SceneContent({ mouse }: { mouse: { x: number; y: number } }) {
    ══════════════════════════════════════════════ */
 export default function Scene3D() {
     const mouse = useMousePosition();
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     return (
         <div className="canvas-container">
             <Canvas
-                dpr={[1, 1.5]}
+                dpr={isMobile ? [1, 1] : [1, 1.5]}
                 camera={{ position: [0, 0, 12], fov: 55 }}
+                performance={{ min: 0.5 }}
                 gl={{
                     antialias: true,
                     alpha: true,
