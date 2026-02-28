@@ -462,6 +462,7 @@ function ProjectCard({
 export default function ProjectsSection() {
     const sectionRef = useRef<HTMLElement>(null);
     const headingRef = useRef<HTMLDivElement>(null);
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -564,7 +565,7 @@ export default function ProjectsSection() {
                 <div
                     style={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                        gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(320px, 1fr))',
                         gap: '2rem',
                     }}
                 >

@@ -238,6 +238,7 @@ export default function AboutSection() {
     const headingRef = useRef<HTMLDivElement>(null);
     const bioRef = useRef<HTMLDivElement>(null);
     const statsRef = useRef<HTMLDivElement>(null);
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -417,7 +418,7 @@ export default function AboutSection() {
                         style={{
                             opacity: 0,
                             display: 'grid',
-                            gridTemplateColumns: 'repeat(2, 1fr)',
+                            gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)',
                             gap: '2.5rem',
                             padding: '2.5rem',
                             borderRadius: '16px',
