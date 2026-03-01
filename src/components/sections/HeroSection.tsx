@@ -174,7 +174,7 @@ export default function HeroSection() {
                 >
                     Transformando ideias complexas em experiências digitais de{' '}
                     <span style={{ color: '#a855f7', fontWeight: 500 }}>alta performance</span>.
-                    Arquitetura de sistemas e design de interfaces.
+                    
                 </p>
 
                 {/* Social Links */}
@@ -274,6 +274,44 @@ export default function HeroSection() {
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                             <rect x="2" y="9" width="4" height="12"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+
+                    {/* Email */}
+                    <a
+                        href="mailto:luccadev@hotmail.com"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '45px',
+                            height: '45px',
+                            borderRadius: '50%',
+                            background: 'rgba(255, 255, 255, 0.03)',
+                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            color: '#e0e0f0',
+                            transition: 'all 0.3s ease',
+                            cursor: 'pointer',
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.background = 'rgba(16, 185, 129, 0.1)';
+                            e.currentTarget.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+                            e.currentTarget.style.color = '#10b981';
+                            e.currentTarget.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.2)';
+                            e.currentTarget.style.transform = 'translateY(-3px)';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
+                            e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                            e.currentTarget.style.color = '#e0e0f0';
+                            e.currentTarget.style.boxShadow = 'none';
+                            e.currentTarget.style.transform = 'translateY(0)';
+                        }}
+                        title="Email"
+                    >
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                         </svg>
                     </a>
                 </div>
