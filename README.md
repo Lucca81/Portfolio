@@ -18,8 +18,7 @@
 
 ## 📸 Preview
 
-*(Adicione aqui uma imagem de print da sua tela inicial do portfólio. Exemplo abaixo:)*
-![Preview do Projeto](./preview.png)
+https://portfolio-luccadev.vercel.app/
 
 ## ✨ Principais Funcionalidades
 
