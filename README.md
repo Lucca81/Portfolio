@@ -60,48 +60,4 @@ O código está estruturado para facilitar a manutenção e escalabilidade dos c
  ┗ 📜 main.tsx            # Entry point do React Root
 ```
 
-## 🚀 Como Executar Localmente
 
-### Pré-requisitos
-- [Node.js](https://nodejs.org/) (versão >= 18) instalado.
-- NPM ou Yarn ou Bun.
-
-### Instalação
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/Lucca81/Portfolio.git
-```
-
-2. Acesse a pasta do projeto:
-```bash
-cd Portfolio
-```
-
-3. Instale as dependências:
-```bash
-npm install
-```
-
-4. Execute o servidor de desenvolvimento:
-```bash
-npm run dev
-```
-
-5. O projeto estará disponível na porta `http://localhost:5173`.
-
-
-## 🤝 Como Contribuir
-
-Fique à vontade para copiar e melhorar este projeto ou reportar problemas!
-1. Faça um **Fork** deste repositório
-2. Crie sua branch (`git checkout -b feature/MinhaNovaFuncionalidade`)
-3. Faça suas mudanças e commite seguindo os Padrões (`git commit -m 'feat: Adiciona x funcionalidade'`)
-4. Faça o Push para a branch (`git push origin feature/MinhaNovaFuncionalidade`)
-5. Abra um **Pull Request** para eu dar uma olhada.
-
----
-
-<p align="center">
-  Feito com ⚡ por <a href="https://github.com/Lucca81">Lucca</a>
-</p>
