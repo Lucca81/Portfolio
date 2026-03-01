@@ -2,6 +2,7 @@ import Scene3D from './components/canvas/Scene3D';
 import HeroSection from './components/sections/HeroSection';
 import AboutSection from './components/sections/AboutSection';
 import ProjectsSection from './components/sections/ProjectsSection';
+import Footer from './components/sections/Footer';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
 
         {/* Vitrine de Projetos */}
         <ProjectsSection />
+
+        {/* Rodapé Dinâmico */}
+        <Footer />
       </main>
     </>
   );
