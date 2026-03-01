@@ -27,7 +27,7 @@ const projects: Project[] = [
         title: 'MovieFlix',
         subtitle: 'Plataforma de Streaming',
         description:
-            'Plataforma completa de catálogo e streaming de filmes com sistema de recomendação, avaliações de usuários e integração com APIs externas de metadados cinematográficos.',
+            'API RESTful desenvolvida em Spring Boot para o gerenciamento completo de catálogos. O sistema orquestra relacionamentos complexos entre obras, gêneros e plataformas de distribuição, garantindo a consistência e a organização dos conteúdos.',
         techStack: ['Spring Boot', 'PostgreSQL', 'Docker', 'Swagger', 'JWT', 'Spring Security', 'Flyway'],
         apis: ['Auth JWT', 'REST API',],
         color: '#00f0ff',
