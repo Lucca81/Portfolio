@@ -119,7 +119,7 @@ export default function HeroSection() {
                         fontFamily: 'var(--font-sans)',
                     }}
                 >
-                    Engenheiro de Software & Desenvolvedor Full Stack
+                    Engenheiro de Software & Desenvolvedor Backend
                 </p>
 
                 {/* Título principal */}
